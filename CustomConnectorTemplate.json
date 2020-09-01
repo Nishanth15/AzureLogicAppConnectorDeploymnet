@@ -15,24 +15,22 @@
             "name": "[parameters('customApis_BAM2_0_name')]",
             "location": "westeurope",
             "properties": {
-                "connectionParameters": {
-                    "api_key": {
-                        "type": "securestring",
-                        "uiDefinition": {
-                            "displayName": "API Key",
-                            "description": "The API Key for this api",
-                            "tooltip": "Provide your API Key",
-                            "constraints": {
-                                "tabIndex": 2,
-                                "clearText": false,
-                                "required": "true"
-                            }
-                        }
-                    }
-                },
-                "description": "ServerLess360 Custom connector helps you track your business processes.",
+                "description": "A sample custom API",
                 "displayName": "[parameters('customApis_BAM2_0_name')]",
-                "iconUri": "/Content/retail/assets/default-connection-icon.e6bb72160664a5e37b9923c3d9f50ca5.2.svg"
+                "backendService": {
+                  "serviceUrl": "http://petstore.swagger.io/api"
+                },
+                "swagger": { 
+                  "swagger": "2.0",
+                  "info": { },
+                  "host": "petstore.swagger.io",
+                  "schemes": ["http"],
+                  "consumes": ["application/json"],
+                  "produces": ["application/json"],
+                  "paths": { },
+                  "definitions": { }
+                },
+                "apiType": "Rest"
             }
         }
     ]
