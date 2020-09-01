@@ -20,11 +20,11 @@
                 "backendService": {
                   "serviceUrl": "http://petstore.swagger.io/api"
                 },
-                {
+                "swagger":{
   "swagger": "2.0",
   "basePath": "/",
   "definitions": {},
-  "host": "https://sl360bam-4c93a994117e491abf4aefc75edf3d14-fnapp.azurewebsites.net",
+  "host": "",
   "info": {
     "title": "ServerLess360 Custom Connector",
     "description": "ServerLess360 Custom connector helps you track your business processes.",
