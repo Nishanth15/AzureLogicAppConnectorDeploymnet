@@ -18,13 +18,13 @@
                 "description": "A sample custom API",
                 "displayName": "[parameters('customApis_BAM2_0_name')]",
                 "backendService": {
-                  "serviceUrl": "http://petstore.swagger.io/api"
+                  "serviceUrl": "https://sl360bam-4c93a994117e491abf4aefc75edf3d14-fnapp.azurewebsites.net"
                 },
                 "swagger":{
   "swagger": "2.0",
   "basePath": "/",
   "definitions": {},
-  "host": "",
+  "host": "https://sl360bam-4c93a994117e491abf4aefc75edf3d14-fnapp.azurewebsites.net",
   "info": {
     "title": "ServerLess360 Custom Connector",
     "description": "ServerLess360 Custom connector helps you track your business processes.",
