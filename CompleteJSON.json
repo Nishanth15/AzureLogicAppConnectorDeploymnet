@@ -14,7 +14,7 @@
             "type": "String"
         },
         "connections_BAM2_0_externalid": {
-            "defaultValue": "[resourceId([parameters('SubscriptionID')],[parameters('ResourceGroupName')], 'Microsoft.Web/customApis', [parameters('customApis_BAM2_0_name')])]",
+            "defaultValue": "[resourceId(parameters('SubscriptionID'),parameters('ResourceGroupName'), 'Microsoft.Web/connections', parameters('customApis_BAM2_0_name'))]",
             "type": "String"
         },
         "customApis_BAM2_0_externalid": {
