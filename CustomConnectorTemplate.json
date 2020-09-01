@@ -20,6 +20,21 @@
                 "backendService": {
                   "serviceUrl": "https://sl360bam-4c93a994117e491abf4aefc75edf3d14-fnapp.azurewebsites.net"
                 },
+                "connectionParameters": {
+                    "api_key": {
+                        "type": "securestring",
+                        "uiDefinition": {
+                            "displayName": "API Key",
+                            "description": "The API Key for this api",
+                            "tooltip": "Provide your API Key",
+                            "constraints": {
+                                "tabIndex": 2,
+                                "clearText": false,
+                                "required": "true"
+                            }
+                        }
+                    }
+                },
                 "swagger":{
   "swagger": "2.0",
   "basePath": "/",
