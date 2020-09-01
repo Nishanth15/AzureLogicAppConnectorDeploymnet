@@ -9,6 +9,14 @@
         "workflows_UserExperience_name": {
             "defaultValue": "UserExperience",
             "type": "String"
+        },
+        "connections_BAM2_0_externalid": {
+            "defaultValue": "/subscriptions/subscription().id/resourceGroups/NishanthPOC/providers/Microsoft.Web/connections/BAM2.0",
+            "type": "String"
+        },
+        "customApis_BAM2_0_externalid": {
+            "defaultValue": "/subscriptions/subscription().id/resourceGroups/NishanthPOC/providers/Microsoft.Web/customApis/BAM2.0",
+            "type": "String"
         }
     },
     "variables": {},
