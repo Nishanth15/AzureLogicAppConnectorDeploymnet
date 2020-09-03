@@ -12,7 +12,11 @@
         "workflows_UserExperience_name": {
             "defaultValue": "UserExperience",
             "type": "String"
-        }
+        },
+        "connections_BAM2_0_name": {
+          "defaultValue": "BAM2.0",
+          "type": "String"
+      }
     },
     "variables": {},
     "resources": [
@@ -541,6 +545,19 @@
             }
         },
         {
+          "type": "Microsoft.Web/connections",
+          "apiVersion": "2016-06-01",
+          "name": "[parameters('connections_BAM2_0_name')]",
+          "location": "westeurope",
+          "properties": {
+              "displayName": "BAM_Connection",
+              "customParameterValues": {},
+              "api": {
+                  "id": "resourceId(parameters('SubscriptionID'),parameters('ResourceGroupName'), 'Microsoft.Web/customApis', parameters('customApis_BAM2_0_name'))"
+              }
+          }
+        },
+        {
             "type": "Microsoft.Logic/workflows",
             "apiVersion": "2017-07-01",
             "name": "[parameters('workflows_UserExperience_name')]",
@@ -665,7 +682,7 @@
                     "$connections": {
                         "value": {
                             "BAM2.0": {
-                                "connectionId": "resourceId(parameters('SubscriptionID'),parameters('ResourceGroupName'), 'Microsoft.Web/connections', parameters('customApis_BAM2_0_name'))",
+                                "connectionId": "resourceId(parameters('SubscriptionID'),parameters('ResourceGroupName'), 'Microsoft.Web/connections', parameters('connections_BAM2_0_name'))",
                                 "connectionName": "BAM2.0",
                                 "id": "resourceId(parameters('SubscriptionID'),parameters('ResourceGroupName'), 'Microsoft.Web/customApis', parameters('customApis_BAM2_0_name'))"
                             }
